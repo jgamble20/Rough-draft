@@ -1,15 +1,14 @@
-/* General styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: white;
     color: black;
-    opacity: 0; /* Start the page with opacity 0 for fade-in animation */
-    animation: fadeIn 1.5s forwards; /* Fade in the whole page */
+    opacity: 0; 
+    animation: fadeIn 1.5s forwards; 
 }
 
-/* Keyframe for fade-in effect */
+
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -23,7 +22,7 @@ header {
     background-color: orange;
     padding: 10px;
     text-align: center;
-    animation: slideIn 1s ease-out; /* Slide-in effect for header */
+    animation: slideIn 1s ease-out; 
 }
 
 @keyframes slideIn {
@@ -49,7 +48,7 @@ nav ul li a {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    opacity: 0; /* Start with opacity 0 for navbar items */
+    opacity: 0; 
     animation: fadeInNav 2s ease forwards;
 }
 
@@ -66,7 +65,7 @@ nav ul li:nth-child(4) {
     animation-delay: 0.9s;
 }
 
-/* Keyframe for navbar item animation */
+
 @keyframes fadeInNav {
     0% {
         opacity: 0;
@@ -80,7 +79,7 @@ footer {
     background-color: orange;
     text-align: center;
     padding: 10px;
-    animation: slideInFooter 1s ease-out; /* Slide-in effect for footer */
+    animation: slideInFooter 1s ease-out; 
 }
 
 @keyframes slideInFooter {
@@ -92,14 +91,14 @@ footer {
     }
 }
 
-/* Photo gallery layout */
+
 .photo-gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 20px;
     gap: 20px;
-    animation: fadeInGallery 2s ease-out; /* Fade-in effect for gallery */
+    animation: fadeInGallery 2s ease-out; 
 }
 
 @keyframes fadeInGallery {
@@ -118,7 +117,7 @@ footer {
     padding: 10px;
     border: 2px solid orange;
     box-sizing: border-box;
-    animation: fadeInItem 1s ease-out; /* Fade-in effect for each photo */
+    animation: fadeInItem 1s ease-out; 
 }
 
 @keyframes fadeInItem {
@@ -141,16 +140,16 @@ footer {
     margin-top: 10px;
 }
 
-/* Media Queries */
+
 @media (max-width: 1024px) {
     .photo-item {
-        flex: 1 1 calc(50% - 20px); /* Two items per row for tablets */
+        flex: 1 1 calc(50% - 20px); 
     }
 }
 
 @media (max-width: 768px) {
     .photo-item {
-        flex: 1 1 100%; /* Single item per row for small screens */
+        flex: 1 1 100%; 
     }
 }
 

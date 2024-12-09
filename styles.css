@@ -1,4 +1,3 @@
-/* General styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -35,17 +34,16 @@ footer {
     padding: 10px;
 }
 
-/* Photo gallery layout */
 .photo-gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 20px;
-    gap: 20px; /* Adds space between photos */
+    gap: 20px; 
 }
 
 .photo-item {
-    flex: 1 1 calc(33.33% - 20px); /* Ensures three items per row */
+    flex: 1 1 calc(33.33% - 20px); 
     text-align: center;
     margin-bottom: 20px;
     padding: 10px;
@@ -56,8 +54,8 @@ footer {
 .photo-item img {
     width: 100%;
     height: auto;
-    max-height: 200px; /* All images will be the same height */
-    object-fit: cover; /* Ensures images fill the space proportionally */
+    max-height: 200px;
+    object-fit: cover; 
 }
 
 .photo-item p {
@@ -65,16 +63,15 @@ footer {
     margin-top: 10px;
 }
 
-/* Media Queries */
 @media (max-width: 1024px) {
     .photo-item {
-        flex: 1 1 calc(50% - 20px); /* Two items per row for tablets */
+        flex: 1 1 calc(50% - 20px); 
     }
 }
 
 @media (max-width: 768px) {
     .photo-item {
-        flex: 1 1 100%; /* Single item per row for small screens */
+        flex: 1 1 100%; 
     }
 }
 

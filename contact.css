@@ -1,15 +1,14 @@
-/* General styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: white;
     color: black;
-    opacity: 0; /* Start with opacity 0 for fade-in */
-    animation: fadeIn 1.5s forwards; /* Fade in animation */
+    opacity: 0; 
+    animation: fadeIn 1.5s forwards; 
 }
 
-/* Keyframe for page fade-in */
+
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -49,7 +48,7 @@ nav ul li a {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    opacity: 0; /* Start with opacity 0 */
+    opacity: 0; 
     animation: fadeInNav 2s ease forwards;
 }
 
@@ -66,7 +65,6 @@ nav ul li:nth-child(4) {
     animation-delay: 0.9s;
 }
 
-/* Keyframe for navbar animation */
 @keyframes fadeInNav {
     0% {
         opacity: 0;
@@ -76,7 +74,6 @@ nav ul li:nth-child(4) {
     }
 }
 
-/* Footer */
 footer {
     background-color: orange;
     text-align: center;
@@ -93,7 +90,6 @@ footer {
     }
 }
 
-/* Contact Section */
 .contact-info {
     text-align: center;
     margin-top: 40px;
@@ -123,7 +119,6 @@ footer {
     margin-right: auto;
 }
 
-/* Contact Form */
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -176,10 +171,9 @@ footer {
     background-color: darkorange;
 }
 
-/* Responsive Layout */
 @media (max-width: 1024px) {
     .contact-description {
-        width: 90%; /* Adjust width on tablets */
+        width: 90%; 
     }
 }
 
@@ -190,7 +184,7 @@ footer {
     }
 
     .contact-description {
-        width: 100%; /* Full width on smaller screens */
+        width: 100%; 
     }
 }
 
