@@ -83,3 +83,13 @@ footer {
         margin-bottom: 10px;
     }
 }
+
+.photo-item img {
+    width: auto; /* Adjust width dynamically */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Scale down but not up */
+    max-height: 200px; /* Limit maximum height */
+    object-fit: contain; /* Show full image without cropping */
+    display: block; /* Avoid inline-block spacing issues */
+    margin: 0 auto; /* Center the image */
+}
